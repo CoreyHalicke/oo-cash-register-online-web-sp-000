@@ -21,7 +21,7 @@ class CashRegister
     quantity.times do
       items << title
     end
-    @@last_transaction = self
+    @last_transaction = self
   end
   def apply_discount
     if @employee_discount
