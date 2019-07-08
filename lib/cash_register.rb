@@ -20,6 +20,7 @@ class CashRegister
     end
   end
   def apply_discount
+    binding.pry 
     if @employee_discount
       @total = @total * (1 - @employee_discount / 100)
       "After the discount, the total comes to $#{@total}"
